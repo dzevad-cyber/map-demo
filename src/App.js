@@ -20,7 +20,7 @@ function App() {
         {...viewport}
         mapboxApiAccessToken='pk.eyJ1IjoicGF0aWVudDAiLCJhIjoiY2tqM296NjR1M25objJ6bjQ2cnRmaXRqZSJ9.W9okhjuGRm0Jv0a5f8KpfQ'
         onViewportChange={(viewport) => setViewport(viewport)}
-        mapboxApiUrl='https://api.mapbox.com/styles/v1/mapbox/light-v8?access_token=pk.eyJ1IjoicGF0aWVudDAiLCJhIjoiY2tqM296NjR1M25objJ6bjQ2cnRmaXRqZSJ9.W9okhjuGRm0Jv0a5f8KpfQ'
+        // mapboxApiUrl='https://api.mapbox.com/styles/v1/mapbox/light-v8?access_token=pk.eyJ1IjoicGF0aWVudDAiLCJhIjoiY2tqM296NjR1M25objJ6bjQ2cnRmaXRqZSJ9.W9okhjuGRm0Jv0a5f8KpfQ'
       >
         hello world
       </ReactMapGl>

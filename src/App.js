@@ -12,15 +12,14 @@ function App() {
     zoom: 5,
   });
 
-  console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
-
   return (
     <div>
       <ReactMapGl
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
         onViewportChange={(viewport) => setViewport(viewport)}
-        // mapboxApiUrl='https://api.mapbox.com/styles/v1/mapbox/light-v8?access_token=pk.eyJ1IjoicGF0aWVudDAiLCJhIjoiY2tqM296NjR1M25objJ6bjQ2cnRmaXRqZSJ9.W9okhjuGRm0Jv0a5f8KpfQ'
+        mapStyle='mapbox://styles/mapbox/satellite-v9'
+        mapboxApiUrl='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js?access_token=pk.eyJ1IjoicGF0aWVudDAiLCJhIjoiY2tqNGRwcXRiMGp1YjJ6bzllN3pvbHFpNCJ9.il1cJ3czzp4n0r8CrXsinw'
       >
         hello world
       </ReactMapGl>

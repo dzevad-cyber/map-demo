@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import dotenv from 'dotenv';
 
 import ReactMapGl from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+
+dotenv.config();
 
 function App() {
   const [viewport, setViewport] = useState({

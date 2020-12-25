@@ -18,6 +18,7 @@ function App() {
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         onViewportChange={(viewport) => setViewport(viewport)}
+        mapStyle='mapbox://styles/mapbox/streets-v11'
       ></ReactMapGl>
     </div>
   );

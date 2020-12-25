@@ -18,7 +18,7 @@ function App() {
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
         onViewportChange={(viewport) => setViewport(viewport)}
-        // mapStyle='mapbox://styles/mapbox/satellite-v9'
+        mapStyle='mapbox://styles/mapbox/satellite-v9'
       >
         hello world
       </ReactMapGl>

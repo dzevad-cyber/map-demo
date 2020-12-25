@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import ReactMapGl from 'react-map-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 
 function App() {
   const [viewport, setViewport] = useState({
@@ -16,10 +16,11 @@ function App() {
     <div>
       <ReactMapGl
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
         onViewportChange={(viewport) => setViewport(viewport)}
-        mapStyle='mapbox://styles/mapbox/streets-v11'
-      ></ReactMapGl>
+      >
+        hello world
+      </ReactMapGl>
     </div>
   );
 }

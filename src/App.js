@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import ReactMapGl from 'react-map-gl';
-// import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function App() {
   const [viewport, setViewport] = useState({
@@ -11,6 +11,8 @@ function App() {
     height: '100vh',
     zoom: 5,
   });
+
+  console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
 
   return (
     <div>
